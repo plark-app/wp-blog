@@ -1,0 +1,16 @@
+@import '../vars';
+@import '../media';
+@import '../mixins';
+
+.site-main__info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    min-height: 500px;
+
+
+    &-description {
+        font-weight: 700;
+    }
+}
