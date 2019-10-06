@@ -113,6 +113,17 @@ function plark_theme_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar(
+        array (
+            'name' => __( 'Custom Plark Sidebar', 'plark_theme' ),
+            'id' => 'plark-sidebar',
+            'description' => __( 'Custom Sidebar, Add widgets here', 'plark_theme' ),
+            'before_widget' => '<div class="sidebar__content">',
+            'after_widget' => "</div>",
+            'before_title' => '<h3 class="sidebar__title">',
+            'after_title' => '</h3>',
+        )
+    );
 }
 add_action( 'widgets_init', 'plark_theme_widgets_init' );
 

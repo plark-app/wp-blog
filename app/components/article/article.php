@@ -1,7 +1,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class("article"); ?>>
 	<a class="article__entire" href="<?php echo get_permalink() ?>"></a>
 	<?php if (get_the_post_thumbnail()): ?>
-		<div class="article__thumbnail" style='background-image: url("<?php echo(the_post_thumbnail_url( array(220, 315))); ?>")'></div>
+		<div class="article__thumbnail" style='background-image: url("<?php echo(the_post_thumbnail_url( array(260, 315))); ?>")'></div>
 	<?php endif; ?>
 	<?php
 	if ( 'post' === get_post_type() ) :

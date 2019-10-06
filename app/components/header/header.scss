@@ -143,14 +143,14 @@
         width: 100%;
 
         @include from-lg-width {
-            width: 68%;
+            width: 72%;
         }
     }
 
     #secondary.widget-area {
         @include from-lg-width {
-            padding: 20px;
-            width: 32%;
+            margin-left: 20px;
+            width: calc(28% - 20px);
             position: sticky;
             top: 100px;
             max-height: 100vh;
