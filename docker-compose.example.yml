@@ -26,7 +26,7 @@ services:
        WORDPRESS_DB_USER: wordpress
        WORDPRESS_DB_PASSWORD: wordpress
        WORDPRESS_DB_NAME: wordpress
-     volumes:
-     - ./dist/wp-content/themes/plark_theme:/var/www/html/wp-content/themes/plark_theme
+    #  volumes:
+    #  - ./dist/wp-content:/var/www/html/wp-content/
 volumes:
     db_data: {}
