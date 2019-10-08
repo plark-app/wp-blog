@@ -24,7 +24,7 @@
 
         <div class="content-single__author">
             <div class="content-single__author-avatar">
-                <?php echo get_avatar( get_the_author_email(), '50' ); ?>
+                <?php echo get_avatar( get_the_author_meta('email'), '50' ); ?>
             </div>
             <a href="?author=<?php echo $author_id; ?>">
                 <?php echo get_the_author_meta('first_name', $author_id); ?>

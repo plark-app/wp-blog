@@ -34,7 +34,7 @@
 			<div class="article__author">
 				<!-- <a class="article__entire" href="#"></a> -->
 				<div class="article__author-avatar">
-					<?php echo get_avatar( get_the_author_email(), '40' ); ?>
+					<?php echo get_avatar( get_the_author_meta('email'), '40' ); ?>
 				</div>
 				<div class="article__author-data">
 					<!-- <p class="article__author-name"><?php the_author_meta('first_name'); ?> <?php the_author_meta('last_name'); ?></p> -->
