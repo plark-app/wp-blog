@@ -5,7 +5,6 @@ COPY app app/
 RUN npm install && \
     npm run build
 
-FROM wordpress:5.2.3-php7.2-apache
+FROM wordpress:5.2.3-php7.2-fpm-alpine
 WORKDIR /var/www/html
-COPY --from=NODE_MODULES /usr/src/plark-blog/dist /var/www/html
-
+COPY --from=NODE_MODULES /usr/src/plark-blog/dist /var/www/html/wp-content/themes/
