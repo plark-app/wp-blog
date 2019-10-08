@@ -5,11 +5,25 @@
 
 body.logged-in {
     .header.scrolled {
-        top: 32px;
+        top: 0px;
+
+        @include from-width(600px) {
+            top: 46px;
+        }
+
+        @include from-md-width {
+            top: 32px;
+        }
     }
 
     #secondary.widget-area {
-        top: 132px;
+        @include from-lg-width {
+            top: 132px;
+        }
+    }
+
+    .main-navigation.expanded .menu.nav-menu {
+        top: calc(46px + 50px);
     }
 }
 .header {
@@ -40,6 +54,7 @@ body.logged-in {
     }
 
     &.scrolled {
+        z-index: 10;
         top: 0px;
         position: fixed;
         border-bottom-color: #dfe4eb;
@@ -185,6 +200,8 @@ body.logged-in {
     }
 
     #secondary.widget-area {
+        width: 100%;
+
         @include from-lg-width {
             margin-left: 20px;
             width: calc(28% - 20px);

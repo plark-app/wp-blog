@@ -1,6 +1,9 @@
 <section class="footer__columns">
     <div class="footer__column">
-        <h3 class="footer__column-title">Product</h3>
+        <div class="footer__column-head">
+            <h3 class="footer__column-title">Product</h3>
+            <div class="footer__arrow"></div>
+        </div>
         <div class="footer__links">
             <div>
                 <a class="footer__link" href="https://plark.io/ios-wallet" target="_blank">
@@ -25,7 +28,10 @@
         </div>
     </div>
     <div class="footer__column">
-        <h3 class="footer__column-title">Company</h3>
+        <div class="footer__column-head">
+            <h3 class="footer__column-title">Company</h3>
+            <div class="footer__arrow"></div>
+        </div>
         <div class="footer__links">
             <div>
                 <a class="footer__link" href="https://plark.io/about-us" target="_blank">
@@ -40,7 +46,10 @@
         </div>
     </div>
     <div class="footer__column">
-        <h3 class="footer__column-title">Learn</h3>
+        <div class="footer__column-head">
+            <h3 class="footer__column-title">Learn</h3>
+            <div class="footer__arrow"></div>
+        </div>
         <div class="footer__links">
             <div>
                 <a class="footer__link" href="https://community.plark.io" target="_blank">
@@ -55,7 +64,10 @@
         </div>
     </div>
     <div class="footer__column">
-        <h3 class="footer__column-title">Social</h3>
+        <div class="footer__column-head">
+            <h3 class="footer__column-title">Social</h3>
+            <div class="footer__arrow"></div>
+        </div>
         <div class="footer__links">
             <div>
                 <a class="footer__link" href="https://t.me/PlarkWallet" target="_blank">
@@ -89,8 +101,10 @@
             </div>
         </div>
     </div>
-    <div class="footer__column">
-        <h3 class="footer__column-title">Get in touch</h3>
+    <div class="footer__column opened">
+        <div class="footer__column-head">
+            <h3 class="footer__column-title">Get in touch</h3>
+        </div>
         <div class="footer__links">
             <div>
                 <a class="footer__link" href="mailto:info@plark.io" target="_blank">
