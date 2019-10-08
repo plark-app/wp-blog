@@ -25,6 +25,10 @@ body.logged-in {
     .main-navigation.expanded .menu.nav-menu {
         top: calc(46px + 50px);
     }
+
+    .header.scrolled .main-navigation.expanded .menu.nav-menu {
+        top: 50px;
+    }
 }
 .header {
     display: flex;
