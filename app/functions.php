@@ -108,22 +108,24 @@ function plark_theme_widgets_init() {
 		'name'          => esc_html__( 'Sidebar', 'plark_theme' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'plark_theme' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'before_widget' => '<section id="%1$s" class="widget %2$s sidebar__content">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
+		'before_title'  => '<h2 class="sidebar__title widget-title">',
 		'after_title'   => '</h2>',
 	) );
-	register_sidebar(
-        array (
-            'name' => __( 'Custom Plark Sidebar', 'plark_theme' ),
-            'id' => 'plark-sidebar',
-            'description' => __( 'Custom Sidebar, Add widgets here', 'plark_theme' ),
-            'before_widget' => '<div class="sidebar__content">',
-            'after_widget' => "</div>",
-            'before_title' => '<h3 class="sidebar__title">',
-            'after_title' => '</h3>',
-        )
-    );
+
+	// !! Return if custom plugins will not arrange
+	// register_sidebar(
+    //     array (
+    //         'name' => __( 'Custom Plark Sidebar', 'plark_theme' ),
+    //         'id' => 'plark-sidebar',
+    //         'description' => __( 'Custom Sidebar, Add widgets here', 'plark_theme' ),
+    //         'before_widget' => '<div class="sidebar__content">',
+    //         'after_widget' => "</div>",
+    //         'before_title' => '<h3 class="sidebar__title">',
+    //         'after_title' => '</h3>',
+    //     )
+    // );
 }
 add_action( 'widgets_init', 'plark_theme_widgets_init' );
 
