@@ -112,9 +112,12 @@
         }
 
         &-avatar {
-            border-radius: 50%;
-            overflow: hidden;
             margin-right: 30px;
+            overflow: hidden;
+
+            img {
+                border-radius: 50%;
+            }
         }
     }
 
