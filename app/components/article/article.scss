@@ -2,6 +2,22 @@
 @import '../media';
 @import '../mixins';
 
+.entry-content {
+    font-size: 18px;
+    line-height: 1.46;
+
+    p {
+        margin: 0;
+        & + & {
+            margin-top: 24px;
+        }
+    }
+
+    h2 {
+        margin-top: 24px;
+    }
+}
+
 .article {
     display: flex;
     flex-direction: column;
