@@ -7,10 +7,6 @@
 
     var toggleMenuButton = document.querySelector('.menu-toggle[aria-controls="primary-menu"]');
 
-    // if (!button) {
-        //     return;
-        // }
-
     button.addEventListener('click', function() {
         if (menuStatus) {
             menu.setAttribute('aria-expanded', false)
@@ -36,7 +32,7 @@
 
     if (header) {
         window.addEventListener('scroll', function() {
-            if(window.scrollY > 200) {
+            if(window.scrollY > 0) {
                 header.classList.add('scrolled');
             } else {
                 header.classList.remove('scrolled');
