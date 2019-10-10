@@ -2,5 +2,4 @@
 .env
 docker-compose.yml
 node_modules
-wp-content/uploads
 dist

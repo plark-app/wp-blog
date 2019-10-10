@@ -1,1 +1,0 @@
-<?php require get_template_directory() . '/components/content-single/content-single.php' ?>
