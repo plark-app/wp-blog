@@ -2,7 +2,8 @@ FROM wordpress:5.2.3-php7.2-apache as WP
 
 FROM php:7.2-apache
 
-COPY ./squaretype /usr/src/wordpress/wp-content/themes/
+COPY --from=WP / /
+COPY ./squaretype /usr/src/wordpress/wp-content/themes/squaretype/
 
 RUN mkdir -p /var/www/html/blog/wp-content && \
     chown -R www-data:www-data /var/www/html/blog
